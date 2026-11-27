@@ -1,3 +1,6 @@
+import random
+import subprocess
+
 def dobrado(x):
     d = x * 2
     return d
@@ -10,8 +13,11 @@ def quad(z):
     q = z ** 2
     return q
 
+subprocess.run('cls', shell=True)
 
-num = float(input('Digite um numero: '))
+num = random.randint(10,100)
+print(num)
+
 print("""
 [1] - Dobro
 [2] - Triplo
